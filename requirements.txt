@@ -1,7 +1,6 @@
-pandas
-pandas-datareader
-plotly
-dash
-dash-bootstrap-components
-dash-bootstrap-templates
-gunicorn
+dash==2.8.1
+dash_bootstrap_components==1.4.0
+dash_bootstrap_templates==1.0.8
+pandas==1.5.3
+pandas_datareader==0.10.0
+plotly==5.13.1
