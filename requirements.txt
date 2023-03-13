@@ -4,3 +4,4 @@ dash_bootstrap_templates==1.0.8
 pandas==1.5.3
 pandas_datareader==0.10.0
 plotly==5.13.1
+gunicorn
