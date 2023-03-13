@@ -14,6 +14,7 @@ load_figure_template('bootstrap')
 
 data = pd.read_csv("world_1960_2021.csv")
 data = data.dropna()
+
 fig_KT = px.line(
         data,
         x = 'year',
@@ -26,7 +27,6 @@ fig_PC = px.line(
         x = 'year',
         y = "EN.ATM.CO2E.PC"
     )
-fig_PC.show()
 
 app = Dash(__name__, external_stylesheets = [dbc.themes.BOOTSTRAP, dbc_css])
 server = app.server
@@ -56,7 +56,7 @@ app.layout = dbc.Container(
     className = 'dbc'
 )
 
-app.run_server()
+app.run_server(debug = True)
 
 if __name__ == "__main__":
     app.run_server(debug = True)
